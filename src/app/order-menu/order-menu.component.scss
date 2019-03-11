@@ -1,0 +1,17 @@
+.content-tile {
+    background: #ffffff;
+    border: thin solid #e6e6e6;
+    min-height: 400px;
+    padding: 20px;
+}
+
+.food-cat {   
+    border-top: thin solid transparent;
+    padding-bottom: 25px;
+    .item-wrapper {
+        border-bottom: thin solid #e6e6e6;
+    }
+    .item-wrapper:first-child {
+        border-top: thin solid #e6e6e6;
+    }
+} 

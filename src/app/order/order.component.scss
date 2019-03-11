@@ -1,0 +1,38 @@
+.content-tile {
+    background: #ffffff;
+    border: thin solid #e6e6e6;
+    min-height: 100px;
+    padding: 20px;
+}
+
+.order-footer {
+    border-top: thin solid #e6e6e6;
+    padding: 10px 0;
+    .total-price {
+        display: flex;
+        justify-content: space-between;
+    }
+    .continue-order {
+        background: green;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        padding: 10px;
+        margin: 20px 0 0;
+        font-size: 20px;
+    }
+}
+
+.empty-message {
+    height: 150px;
+    text-align: center;
+    padding-top: 100px;
+    color: #676666;
+}
+
+@media (max-width: 650px) {
+    .order-strip {
+        display: flex;
+    }
+}

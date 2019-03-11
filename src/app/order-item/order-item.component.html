@@ -1,0 +1,19 @@
+<div class="food-item">
+  <div class="info">
+    <div class="type-icon" [ngClass]="{'veg': item.type === 0, 'non-veg': item.type === 1}">
+      <div></div>
+    </div>
+    <div class="item-info">
+      <div class="name">{{item.name}}</div>
+      <div class="price">{{item.price | currency: 'INR'}}</div>
+    </div>
+  </div>
+  <div class="add-remove-item">
+    <button class="btn-item add-first" *ngIf="count === 0; else elseBlock" (click)="addItem(item)">ADD</button>
+    <ng-template #elseBlock>
+      <button class="btn-item remove" (click)="removeItem(item)">-</button>
+      <div class="btn-item">{{count}}</div>
+      <button class="btn-item add" (click)="addItem(item)">+</button>
+    </ng-template>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="food-menu content-tile">
+    <h2>Food Menu</h2>
+    <div class="food-cat" *ngFor="let cat of menu">
+        <h3>{{cat.categoryName}}</h3>
+        <div class="list">
+            <div class="item-wrapper" *ngFor="let item of cat.list">
+                <order-item [item]="item"></order-item>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<div class="food-order content-tile">
+  <h2>Your Order</h2>
+  <div class="order-list" *ngIf="orderList.length > 0; else emptyBlock">
+    <div class="item-wrapper" *ngFor="let orderItem of orderList">
+      <order-item [item]="orderItem.item"></order-item>
+    </div>
+    <div class="order-footer">
+      <div class="total-price">
+        <div>Subtotal ({{totalItems}} items)</div>
+        <div>{{totalPrice | currency: 'INR'}}</div>
+      </div>
+      <button class="continue-order" (click)="placeOrder()">Place Order</button>
+    </div>
+  </div>
+  <ng-template #emptyBlock>
+    <div class="empty-message">
+      Your cart is empty
+    </div>
+  </ng-template>
+</div>
