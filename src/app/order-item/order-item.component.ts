@@ -40,7 +40,6 @@ export class OrderItemComponent implements OnInit, OnDestroy {
     this.orderService.removeItem(item);
   }
 
-
   ngOnDestroy() {
     this.onDestroy$.next();
     this.onDestroy$.complete();

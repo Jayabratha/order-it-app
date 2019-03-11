@@ -1,11 +1,11 @@
 <div class="food-item">
   <div class="info">
-    <div class="type-icon" [ngClass]="{'veg': item.type === 0, 'non-veg': item.type === 1}">
+    <div class="type-icon" [ngClass]="{'veg': item?.type === 0, 'non-veg': item?.type === 1}">
       <div></div>
     </div>
     <div class="item-info">
-      <div class="name">{{item.name}}</div>
-      <div class="price">{{item.price | currency: 'INR'}}</div>
+      <div class="name">{{item?.name}}</div>
+      <div class="price">{{item?.price | currency: 'INR'}}</div>
     </div>
   </div>
   <div class="add-remove-item">

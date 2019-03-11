@@ -8,7 +8,7 @@ import { OrderService } from './shared/services/order.service';
 })
 
 export class AppComponent {
-  title = 'order-food-app';
+  title = 'order-it-app';
   confirm: boolean = false;
   orderPrice: number = 0;
   showMenu: boolean = false;

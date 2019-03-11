@@ -22,4 +22,13 @@ describe('OrderItemComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have a addItem function defined', () => {
+    expect(component.addItem).toBeDefined();
+  });
+
+  it('should have a removeItem function defined', () => {
+    expect(component.removeItem).toBeDefined();
+  });
+
 });
